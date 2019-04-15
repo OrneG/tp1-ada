@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  font-family: "Indie Flower", cursive;
+  color: #fa7855;
+  font-size: 50px;
+  margin: 10px;
+}
+
+li {
+  list-style: none;
+  padding: 0px 30px;
+  font-family: "IBM Plex Mono", monospace;
+  color: #666666;
+  font-weight: 600;
+  font-size: 20px;
+}
+li:hover {
+  color: #fa7855;
+}
+
+.header-ul {
+  display: flex;
+}
+
+.hover-li {
+  position: relative;
+}
+.hover-li:hover ul {
+  visibility: visible;
+}
+
+.hover-li ul {
+  position: absolute;
+  left: 0px;
+  padding: 10px 0px 0px 0px;
+  visibility: hidden;
+  background-color: #f8f8f8;
+}
+.hover-li ul li {
+  padding: 5px 30px;
+}
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+  height: 490px;
+}
+.banner img {
+  flex-basis: 20%;
+  height: 490px;
+}
+
+.img-container {
+  position: relative;
+}
+.img-container:hover .hover-img {
+  height: 120px;
+}
+.img-container:hover .hover-img li, .img-container:hover .hover-img p {
+  display: contents;
+}
+.img-container:hover .hover-img ul {
+  display: flex;
+}
+
+.hover-img {
+  position: absolute;
+  background-color: #fa79556b;
+  width: 326.484px;
+  height: 0px;
+  transition: height 0.3s ease-in;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+}
+.hover-img li, .hover-img p {
+  color: white;
+  display: none;
+  font-family: "IBM Plex Mono", monospace;
+}
+.hover-img ul {
+  display: none;
+  padding-left: 30px;
+}
+.hover-img li {
+  font-size: 12px;
+  padding: 0px 10px 0px 0px;
+}
+.hover-img p {
+  font-size: 14px;
+  font-weight: 600;
+  padding-left: 30px;
+}
+
+/*# sourceMappingURL=style.css.map */
