@@ -17,17 +17,21 @@ h1 {
     margin: 10px;
 }
 
-li {
+li, a {
     list-style: none;
     padding: 0px 30px;
     font-family: $main-font;
-    color: #666666;
+    color: $grey-color;
     font-weight: 600;
     font-size: 20px;
 
     &:hover {
         color: $main-color;
     }
+}
+
+a {
+    text-decoration:none;
 }
 
 .header-ul {
@@ -48,6 +52,7 @@ li {
     padding: 10px 0px 0px 0px;
     visibility: hidden;
     background-color: #f8f8f8;
+    z-index: 999;
 
     & li {
         padding: 5px 30px;

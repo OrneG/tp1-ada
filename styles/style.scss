@@ -1,6 +1,5 @@
-$title-font: "Indie Flower", cursive;
-$main-font: "IBM Plex Mono", monospace;
-$main-color: #fa7855;
-
+@import 'general/variables';
 @import 'layout/header';
 @import 'layout/banner';
+@import 'layout/main-img';
+@import 'layout/main-video';
