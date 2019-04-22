@@ -13,6 +13,7 @@
         h1{
             font-family: $mainfont;
             color:$orangecolor;
+            font-size: 50px;
         }
         ul{
             display: flex;
@@ -23,6 +24,17 @@
                 margin-right: 40px;
                 color: $graycolor;
             }
+        }
+    }
+    .img-frutas{
+        img{
+            width: 100%;
+        }
+    }
+    .info-container{
+        .casa{
+            width: 20px;
+            height: 20px;
         }
     }
     .container2{
@@ -52,13 +64,30 @@
             }
             .foto-receta{
                 border-radius: 50px;
-
             }
         }
-        blockquote{
+        h4{
+            color: $graycolor;
+            font-family: $secondaryfont;
+        }
+        h2{
+            font-family: $secondaryfont; 
+        }
+        p{
+            color: $graycolor;
+            font-family: $secondaryfont; 
+        }
+        .quote{
+            font-family: $secondaryfont;
             width: 640px;
-
+            border-left: 1px solid $orangecolor;
+            color: $graycolor;
+        }
+        .ingredientes{
+            display: flex;
+            flex-direction: column;
         }
     }
+
 
 }
