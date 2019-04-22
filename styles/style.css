@@ -1,0 +1,242 @@
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  font-family: "Indie Flower", cursive;
+  color: #fa7855;
+  font-size: 50px;
+  margin: 10px;
+}
+
+li, a {
+  list-style: none;
+  padding: 0px 30px;
+  font-family: "IBM Plex Mono", monospace;
+  color: #666666;
+  font-weight: 600;
+  font-size: 20px;
+}
+li:hover, a:hover {
+  color: #fa7855;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header-ul {
+  display: flex;
+}
+
+.hover-li {
+  position: relative;
+}
+.hover-li:hover ul {
+  visibility: visible;
+}
+
+.hover-li ul {
+  position: absolute;
+  left: 0px;
+  padding: 10px 0px 0px 0px;
+  visibility: hidden;
+  background-color: #f8f8f8;
+  z-index: 999;
+}
+.hover-li ul li {
+  padding: 5px 30px;
+}
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+  height: 490px;
+  z-index: 1;
+  overflow: hidden;
+}
+.banner img {
+  flex-basis: 20%;
+  height: 490px;
+}
+
+.img-container {
+  position: relative;
+}
+.img-container:hover .hover-img {
+  height: 120px;
+}
+.img-container:hover .hover-img li, .img-container:hover .hover-img p {
+  display: contents;
+}
+.img-container:hover .hover-img ul {
+  display: flex;
+}
+
+.hover-img {
+  position: absolute;
+  background-color: #fa79556b;
+  width: 326.484px;
+  height: 0px;
+  transition: height 0.3s ease-in;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding-left: 20px;
+}
+.hover-img li, .hover-img p {
+  color: white;
+  display: none;
+  font-family: "IBM Plex Mono", monospace;
+}
+.hover-img ul {
+  display: none;
+  padding-left: 0;
+}
+.hover-img li {
+  font-size: 12px;
+  padding: 0px 10px 0px 0px;
+}
+.hover-img p {
+  font-size: 14px;
+  font-weight: 600;
+  padding-left: 30px;
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#main ul {
+  display: flex;
+  color: #666666;
+  align-self: flex-start;
+  padding-left: 0px;
+  margin-top: 5px;
+}
+#main ul li {
+  padding: 0px 4px;
+  font-size: 10px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+.img-main-container {
+  display: flex;
+  height: 260px;
+  justify-content: space-between;
+  margin-top: 30px;
+  position: relative;
+}
+.img-main-container img {
+  width: 350px;
+  height: 235px;
+  background-size: cover;
+  border-radius: 15%;
+  position: relative;
+}
+.img-main-container .img-title {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 30px;
+  width: 180px;
+  height: 30px;
+}
+.img-main-container .img-title:nth-of-type(1) {
+  top: 105px;
+  left: 80px;
+}
+.img-main-container .img-title:nth-of-type(2) {
+  top: 105px;
+  left: 445px;
+}
+.img-main-container .img-title:nth-of-type(3) {
+  top: 105px;
+  left: 810px;
+}
+.img-main-container .img-title h3 {
+  text-align: center;
+  font-size: 15px;
+  font-family: "IBM Plex Mono", monospace;
+}
+.img-main-container .img-title:hover {
+  background-color: #fa7855;
+}
+
+.video-container {
+  display: flex;
+  justify-content: space-between;
+}
+.video-container img {
+  border-radius: 50%;
+  height: 45%;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  justify-content: space-between;
+  box-sizing: border-box;
+  max-height: 415px;
+}
+
+iframe {
+  width: 68%;
+}
+
+.profile-title {
+  background-color: #fde2da;
+  width: 100%;
+  height: 30px;
+  text-align: center;
+  font-family: "IBM Plex Mono", monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile-title h3 {
+  font-size: 12px;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.description h2, .description p {
+  margin: 0px;
+  font-family: "IBM Plex Mono", monospace;
+}
+.description h2 {
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+.description p {
+  text-align: center;
+  color: #a7a6a6;
+  font-size: 12px;
+  margin: 0px 20px;
+  font-weight: 600;
+}
+
+/*# sourceMappingURL=style.css.map */
