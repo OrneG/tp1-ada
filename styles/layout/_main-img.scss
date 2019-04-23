@@ -5,15 +5,8 @@
 
     ul {
         display: flex;
-        color: $grey-color;
-        align-self: flex-start;
+        color: $light-grey-color;
         padding-left: 0px;
-        margin-top: 5px;
-
-        li {
-            padding: 0px 4px;
-            font-size: 10px;
-        }
     }
 }
 
@@ -36,6 +29,10 @@
         background-size: cover;
         border-radius: 15%;
         position: relative;
+
+        &:hover .img-title{
+            background-color: $main-color;
+        }
     }
 
     .img-title {
@@ -67,10 +64,6 @@
             text-align: center;
             font-size: 15px;
             font-family: $main-font;
-        }
-
-        &:hover {
-            background-color: $main-color;
         }
     }
 }

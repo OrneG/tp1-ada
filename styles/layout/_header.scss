@@ -8,6 +8,16 @@ header {
     display: flex;
     align-items: center;
     flex-direction: column;
+
+    li, a {
+        font-size: 20px;
+        padding: 0px 30px;
+        color: $grey-color;
+        
+        &:hover {
+            color: $main-color;
+        }
+    }
 }
 
 h1 {
@@ -19,15 +29,8 @@ h1 {
 
 li, a {
     list-style: none;
-    padding: 0px 30px;
     font-family: $main-font;
-    color: $grey-color;
     font-weight: 600;
-    font-size: 20px;
-
-    &:hover {
-        color: $main-color;
-    }
 }
 
 a {
