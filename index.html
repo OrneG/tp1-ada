@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <header id="#home">
+    <header id="home">
         <h1>Mi Blog de Cocina</h1>
         <ul class="header-ul">
             <li><a href="index.html">HOME</a></li>
@@ -27,6 +27,9 @@
             <li>SOBRE MÍ</li>
             <li>CONTACTO</li>
         </ul>
+        <div class="mobile-dropdown">
+                <h2><i class="fas fa-bars"></i>MENU</h2>
+        </div>
     </header>
     <section class="banner">
         <div class="img-container">
@@ -74,20 +77,26 @@
             </div>
         </div>
     </section>
-    <section id="main">
+    <main id="main">
         <div class="main">
             <div class="img-main-container">
-                <img src="img/platos.jpeg" />
-                <div class="img-title">
-                    <h3>PLATOS</h3>
+                <div class="img-container-indv">
+                    <img src="img/platos.jpeg" />
+                    <div class="img-title">
+                        <h3>PLATOS</h3>
+                    </div>
                 </div>
-                <img src="img/recetas.JPG" />
-                <div class="img-title">
-                    <h3>RECETAS</h3>
+                <div class="img-container-indv">
+                    <img src="img/recetas.JPG" />
+                    <div class="img-title">
+                        <h3>RECETAS</h3>
+                    </div>
                 </div>
-                <img src="img/exoticos.JPG" />
-                <div class="img-title">
-                    <h3>EXÓTICOS</h3>
+                <div class="img-container-indv">
+                    <img src="img/exoticos.JPG" />
+                    <div class="img-title">
+                        <h3>EXÓTICOS</h3>
+                    </div>
                 </div>
             </div>
             <div class="video-container">
@@ -109,11 +118,11 @@
                     </div>
                 </div>
             </div>
-            <ul class="video-ul">
-                <li>Diciembre 23, 2017</li>
-                <li>|</li>
-                <li>21 comentarios</li>
-            </ul>
+            <div class="video-ul">
+                <p>29 de Abril, 2017</p>
+                <p>|</p>
+                <p>¿Cómo preparar las mejores hamburguesas?</p>
+            </div>
             <div class="articles">
                 <div class="hr"></div>
                 <div class="article">
@@ -123,7 +132,7 @@
                             <ul>
                                 <li>By María</li>
                                 <li>|</li>
-                                <li>Mayo 19, 2017</li>
+                                <li>Mayo 19, <span>2017</span></li>
                             </ul>
                             <ul>
                                 <li><i class="far fa-heart"></i>20</li>
@@ -164,17 +173,29 @@
             </div>
             <footer>
                 <ul>
-                    <i class="fab fa-facebook-f"></i><li>FACEBOOK</li>
-                    <i class="fab fa-twitter"></i><li>TWITTER</li>
-                    <i class="fab fa-google-plus-g"></i><li></i>GOOGLE+</li>
-                    <i class="fab fa-linkedin"></i><li>LINKEDIN</li>
-                    <i class="fab fa-instagram"></i><li>INSTAGRAM</li>
-                    <i class="fab fa-youtube"></i><li>YOUTUBE</li>
+                    <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i>
+                        <li>FACEBOOK</li>
+                    </a>
+                    <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i>
+                        <li>TWITTER</li>
+                    </a>
+                    <a href="https://www.google.com/"><i class="fab fa-google-plus-g"></i>
+                        <li></i>GOOGLE+</li>
+                    </a>
+                    <a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i>
+                        <li>LINKEDIN</li>
+                    </a>
+                    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i>
+                        <li>INSTAGRAM</li>
+                    </a>
+                    <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i>
+                        <li>YOUTUBE</li>
+                    </a>
                 </ul>
             </footer>
-            <div class= footer-hr></div>
+            <div class="footer-hr"><div class="footer-arrow"><a href="index.html"><i class="fas fa-arrow-up"></i></a></div></div>
         </div>
-    </section>
+    </main>
 </body>
 
 </html>

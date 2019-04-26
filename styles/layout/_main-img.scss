@@ -7,6 +7,7 @@
         display: flex;
         color: $light-grey-color;
         padding-left: 0px;
+        flex-wrap: wrap;
     }
 }
 
@@ -21,16 +22,14 @@
     height: 260px;
     justify-content: space-between;
     margin-top: 30px;
-    position: relative;
 
     img {
         width: 350px;
         height: 235px;
         background-size: cover;
         border-radius: 15%;
-        position: relative;
 
-        &:hover .img-title{
+        &:hover + .img-title{
             background-color: $main-color;
         }
     }
@@ -46,18 +45,7 @@
         height: 30px;
 
         &:nth-of-type(1) {
-            top: 105px;
-            left: 80px;
-        }
-
-        &:nth-of-type(2) {
-            top: 105px;
-            left: 445px;
-        }
-
-        &:nth-of-type(3) {
-            top: 105px;
-            left: 810px;
+            transform: translate(48%, -440%)
         }
 
         h3 {
@@ -66,4 +54,8 @@
             font-family: $main-font;
         }
     }
+}
+
+.img-container-indv {
+    position: relative;
 }

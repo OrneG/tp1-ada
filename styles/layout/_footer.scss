@@ -18,6 +18,12 @@ footer {
     i {
         padding: 0px 10px;
     }
+
+    a {
+        color: inherit;
+        display: flex;
+        align-items: center;
+    }
 }
 
 .footer-hr {
@@ -27,3 +33,6 @@ footer {
     margin: 15px 0px;
 }
 
+.footer-arrow {
+    display: none;
+}
