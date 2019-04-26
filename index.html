@@ -1,62 +1,201 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="02.u3tf-8"/>
-    <link rel="stylesheet" type="text/css" href="styles/main.css"/>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Mi blog de cocina</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="../tp1-ada/styles/style.css">
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
+
 <body>
-    <div class="receta-page">
-        <header class="container1">
-            <h1>Mi Blog de Cocina</h1>
+    <header id="home">
+        <h1>Mi Blog de Cocina</h1>
+        <ul class="header-ul">
+            <li><a href="index.html">HOME</a></li>
+            <li class="hover-li">PLATOS <i class="fas fa-sort-down"></i>
                 <ul>
-                    <li>HOME</li>
-                    <li>PLATOS</li>
-                    <li>SOBRE MI</li>
-                    <li>CONTACTO</li>
+                    <li>Ensalada</li>
+                    <li>Carne</li>
+                    <li>Helado</li>
                 </ul>
-        <header>
-        <div class= "img-frutas">
-            <img src="img/banner.jpg"/>
+            </li>
+            <li>SOBRE MÍ</li>
+            <li>CONTACTO</li>
+        </ul>
+        <div class="mobile-dropdown">
+                <h2><i class="fas fa-bars"></i>MENU</h2>
         </div>
-            <div clas="info-container">
-                <img class="casa" src="img/home.png"/>
-                <h4>Home > Archive > <span>Post Blog</span> </h4>
+    </header>
+    <section class="banner">
+        <div class="img-container">
+            <img src="img/img-1.jpg" />
+            <div class="hover-img">
+                <ul>
+                    <li>Mayo 17, 2017</li>
+                    <li>|</li>
+                    <li>5 comentarios</li>
+                </ul>
+                <p>"Los mejores tacos del país, en pocos pasos"</p>
             </div>
-        <section class= "container2">
-            <div class= "receta">
-                <div class="container-redes">
-                    <img class="facebook" src="img/facebook.png"/>
-                    <img class="twitter" src="img/twitter.png"/>
-                    <img class="google" src="img/google-plus.png"/>
-                    <img class="instagram" src="img/instagram.png"/>
-                    <img class="pinterest" src="img/pinterest.png"/>
+        </div>
+        <div class="img-container">
+            <img src="img/img-2.jpg" />
+            <div class="hover-img">
+                <ul>
+                    <li>Junio 20, 2017</li>
+                    <li>|</li>
+                    <li>12 comentarios</li>
+                </ul>
+                <p>"Con qué vino acompañar un buen salmón"</p>
+            </div>
+        </div>
+        <div class="img-container">
+            <img src="img/img-3.jpg" />
+            <div class="hover-img">
+                <ul>
+                    <li>Agosto 30, 2017</li>
+                    <li>|</li>
+                    <li>18 comentarios</li>
+                </ul>
+                <p>"Cómo crear un yogurt protéico con pocos ingredientes"</p>
+            </div>
+        </div>
+        <div class="img-container">
+            <img src="img/img-4.jpg" />
+            <div class="hover-img">
+                <ul>
+                    <li>Diciembre 23, 2017</li>
+                    <li>|</li>
+                    <li>21 comentarios</li>
+                </ul>
+                <p>"Unas tostadas sabrosas para arrancar el día"</p>
+            </div>
+        </div>
+    </section>
+    <main id="main">
+        <div class="main">
+            <div class="img-main-container">
+                <div class="img-container-indv">
+                    <img src="img/platos.jpeg" />
+                    <div class="img-title">
+                        <h3>PLATOS</h3>
+                    </div>
                 </div>
-                <img class="foto-receta" src="img/recetas.JPG"/>
+                <div class="img-container-indv">
+                    <img src="img/recetas.JPG" />
+                    <div class="img-title">
+                        <h3>RECETAS</h3>
+                    </div>
+                </div>
+                <div class="img-container-indv">
+                    <img src="img/exoticos.JPG" />
+                    <div class="img-title">
+                        <h3>EXÓTICOS</h3>
+                    </div>
+                </div>
             </div>
-                    <h4>By Maria, Mayo 2017</h4>
-                    <h2>Pionolo salado</h2>
-                    <p>Muy sencillo, económico y rápido, sirve para rellenar con ingredientes dulces o salados. 
-                    Aquí va la receta bien caserita, como lo hacia mi abuela.</p>
-                <div  class= "quote">
-                    <blockquote>
-                        <p>“La cocina es algo que viene de generación en generación, desde nuestros 
-                        ancestros hasta ahora en nuestra actualidad. Muchas recetas tradicionales”</p>
-                        <cita>ELENA REMOTO</cita>
-                    </blockquote>  
-                </div>    
-                <ul class="ingredientes">
-                    <li>2 Cebollas moradas</li>
-                    <li>2 Champiñones</li>
-                    <li>2 cdas de Pan rallado</li>
-                    <li>1 atado de Perejil</li>
-                    <li>2 chiles jalapeño</li>
-                    <li>1 paquete de queso dambo en fetas</li>
-                </ul>   
-        </section>
-
-
-    </div>
+            <div class="video-container">
+                <iframe width="560" height="415" src="https://www.youtube.com/embed/RQ1yRT_3npU" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <div class="profile">
+                    <div class="profile-title">
+                        <h3>SOBRE MI</h3>
+                    </div>
+                    <img src="img/profile.jpg" />
+                    <div class="description">
+                        <h2>Laura Tarutio</h2>
+                        <p>Tengo 25 años, me recibí de chef hace un año
+                            y amo hacer felices a los demás a través de mi comida.</p>
+                    </div>
+                    <div class="profile-title">
+                        <h3>NEWSLETTER</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="video-ul">
+                <p>29 de Abril, 2017</p>
+                <p>|</p>
+                <p>¿Cómo preparar las mejores hamburguesas?</p>
+            </div>
+            <div class="articles">
+                <div class="hr"></div>
+                <div class="article">
+                    <img src="img/nota1.JPG" />
+                    <div class="article-text">
+                        <div class="article-ul">
+                            <ul>
+                                <li>By María</li>
+                                <li>|</li>
+                                <li>Mayo 19, <span>2017</span></li>
+                            </ul>
+                            <ul>
+                                <li><i class="far fa-heart"></i>20</li>
+                                <li><i class="far fa-comments"></i>10</li>
+                                <li><i class="fas fa-share-alt"></i></li>
+                            </ul>
+                        </div>
+                        <h2>Delicias dulces</h2>
+                        <p>En este artículo van a poder ver una receta muy simple, sana y rica!</p>
+                        <div class="article-title">
+                            <h3>Leer más</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="hr"></div>
+                <div class="article">
+                    <img src="img/nota2.JPG" />
+                    <div class="article-text">
+                        <div class="article-ul">
+                            <ul>
+                                <li>By María</li>
+                                <li>|</li>
+                                <li>Mayo 19, 2017</li>
+                            </ul>
+                            <ul>
+                                <li><i class="far fa-heart"></i>20</li>
+                                <li><i class="far fa-comments"></i>10</li>
+                                <li><i class="fas fa-share-alt"></i></li>
+                            </ul>
+                        </div>
+                        <h2>Comidas simples</h2>
+                        <p>En este artículo van a poder ver una receta muy simple, sana y rica!</p>
+                        <div class="article-title">
+                            <h3>Leer más</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <ul>
+                    <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i>
+                        <li>FACEBOOK</li>
+                    </a>
+                    <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i>
+                        <li>TWITTER</li>
+                    </a>
+                    <a href="https://www.google.com/"><i class="fab fa-google-plus-g"></i>
+                        <li></i>GOOGLE+</li>
+                    </a>
+                    <a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i>
+                        <li>LINKEDIN</li>
+                    </a>
+                    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i>
+                        <li>INSTAGRAM</li>
+                    </a>
+                    <a href="https://www.youtube.com/"><i class="fab fa-youtube"></i>
+                        <li>YOUTUBE</li>
+                    </a>
+                </ul>
+            </footer>
+            <div class="footer-hr"><div class="footer-arrow"><a href="index.html"><i class="fas fa-arrow-up"></i></a></div></div>
+        </div>
+    </main>
 </body>
+
 </html>
