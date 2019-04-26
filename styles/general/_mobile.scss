@@ -37,6 +37,7 @@
     .img-main-container {
         justify-content: center;
         height: 820px;
+        order: 0;
 
         img {
             margin: 0px 10px;
@@ -45,6 +46,7 @@
 
     .video-container {
         justify-content: center;
+        order: 1;
 
         .profile {
             margin-top: 0px;
@@ -52,23 +54,32 @@
     }
 
     .video-ul {
-        p {
-            color: $white-color;
-        }
+            display: none;
     }
 
     iframe {
         display: none;
     }
+
+    .articles {
+        order: 0;
+    }
     
     footer {
+        order: 2;
+
         li {
             display: none;
         }
     }
+
+    .footer-hr {
+        order: 3;
+    }
 }
 
 @media (max-width: 730px) {
+
     .articles {
         .article {
 
@@ -81,7 +92,7 @@
             }
         }    
 
-        .article + .hr {
+        .hr {
             display: none;
         }
     }
