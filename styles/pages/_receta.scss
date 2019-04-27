@@ -1,93 +1,266 @@
-.receta-page{
-    width:100%;
+.receta-page {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  .img-frutas {
+    img {
+      width: 100%;
+    }
+  }
+
+  .info-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    .container1{
-        display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 150px;
+    @media (max-width: 775px) {
+      height: 80px;
+    }
+    i {
+      margin-top: 25px;
+      margin-left: 100px;
+      @media (max-width: 775px) {
+        margin-left: 25px;
+      }
+    }
+
+    h4 {
+      font-family: $secondaryfont;
+      text-align: left;
+      margin-left: 10px;
+      span {
+        color: $graycolor;
+        @media (max-width: 580px) {
+          display: block;
+        }
+      }
+    }
+  }
+  .container2 {
+    display: flex;
+    justify-content: center;
+    max-width: 1500px;
+    width: 100%;
+    .columna {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      align-content: center;
+      width: 100%;
+      max-width: 800px;
+      @media (max-width: 775px) {
+        max-width: 500px;
+        width: 90%;
+        margin-left: 0px;
+        justify-content: flex-start;
+      }
+    }
+    .receta {
+      display: flex;
+      flex-direction: row;
+      width: 80%;
+      justify-content: space-around;
+      @media (max-width: 775px) {
         flex-direction: column;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
-        h1{
-            font-family: $mainfont;
-            color:$orangecolor;
-            font-size: 50px;
-        }
-        ul{
-            display: flex;
-            flex-direction: row;
-            font-family: $secondaryfont;
-            list-style: none;
-            li{
-                margin-right: 40px;
-                color: $graycolor;
-            }
-        }
-    }
-    .img-frutas{
-        img{
-            width: 100%;
-        }
-    }
-    .info-container{
-        .casa{
-            width: 20px;
-            height: 20px;
-        }
-    }
-    .container2{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        align-content: center;
+        justify-content: flex-start;
         width: 100%;
-        .receta{
-            display: flex;
-            flex-direction: row;
-            width: 800px;
-            justify-content: space-around;
-            .container-redes{
-                width: 50px;
-                height: 300px;
-                display:flex;
-                flex-direction: column;
-                justify-content: space-between;
-                margin-top: 20px;
-                img{
-                    height: 50px;
-                    width: 50px;
-                    margin-top: 20px;
-                }
-            }
-            .foto-receta{
-                border-radius: 50px;
-            }
+      }
+
+      .container-redes {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 20px;
+        max-width: 390px;
+        @media (max-width: 775px) {
+          flex-direction: row;
+          width: 100%;
+          justify-content: space-between;
+          max-width: 100%;
         }
-        h4{
+
+        img {
+          height: 50px;
+          width: 50px;
+          margin-right: 25px;
+          display: flex;
+          @media (max-width: 775px) {
+            height: 40px;
+            width: 40px;
+            margin-bottom: 30px;
+            margin-left: 0px;
+            justify-content: flex-start;
+            margin-right: 0px;
+          }
+        }
+      }
+      .foto-receta {
+        border-radius: 50px;
+        width: 100%;
+        max-width: 640px;
+        @media (max-width: 815px) {
+          width: 100%;
+          height: 80%;
+          border-radius: 50px;
+        }
+      }
+    }
+    .conatainer-text {
+      display: flex;
+      justify-content: center;
+      max-width: 640px;
+      width: 100%;
+      align-content: center;
+      flex-direction: column;
+      text-align: start;
+      margin-left: 120px;
+      margin-bottom: 50px;
+      @media (max-width: 815px) {
+        justify-content: flex-start;
+        margin-left: 0;
+      }
+
+      .all-short-container {
+        max-width: 630px;
+        width: 100%;
+        height: 60px;
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        @media (max-width: 775px) {
+          justify-content: flex-start;
+          margin-top: 50px;
+        }
+
+        .short-container1 {
+          max-width: 350px;
+          width: 100%;
+          height: 60px;
+          @media (max-width: 775px) {
+            max-width: 200px;
+          }
+          @media (max-width: 435px) {
+            width: 200px;
+             }
+          h4 {
             color: $graycolor;
             font-family: $secondaryfont;
+            @media (max-width: 780px) {
+              font-size: 13px;
+            }
+          }
         }
-        h2{
-            font-family: $secondaryfont; 
-        }
-        p{
+        .short-container2 {
+          max-width: 300px;
+          width: 100%;
+          height: 60px;
+          @media (max-width: 435px) {
+           max-width: 150px;
+           width: 110px;
+            }
+          i {
+            margin-right: 5px;
+            margin-left: 20px;
+            @media (max-width: 435px) {
+            margin-left: 2px;
+            margin-right: 2px;
+            }
+          }
+          h4 {
             color: $graycolor;
-            font-family: $secondaryfont; 
-        }
-        .quote{
             font-family: $secondaryfont;
-            width: 640px;
-            border-left: 1px solid $orangecolor;
-            color: $graycolor;
+            text-align: end;
+            @media (max-width: 780px) {
+              font-size: 13px;
+            }
+          }
         }
-        .ingredientes{
-            display: flex;
-            flex-direction: column;
+      }
+
+      h2 {
+        font-family: $secondaryfont;
+        color: $graycolor;
+      }
+
+      p {
+        color: $graycolor;
+        font-family: $secondaryfont;
+        font-weight: 600;
+      }
+
+      .quote {
+        font-family: $secondaryfont;
+        max-width: 640px;
+        width: 100%;
+        border-left: 1px solid $orangecolor;
+        color: $graycolor;
+
+        p {
+          color: black;
         }
+      }
+
+      .ingredients {
+        padding: 0px;
+
+        .list-ingredients {
+          font-size: 20px;
+          font-weight: 100;
+          font-family: $main-font;
+          color: $grey-color;
+          list-style: none;
+          margin-left: 20px;
+        }
+
+        li::before {
+          content: "•";
+          color: $orangecolor;
+          display: inline-block;
+          width: 1em;
+          margin-left: -1em;
+        }
+      }
+    }
+  }
+
+  .lastContainer {
+    display: flex;
+    flex-direction: row;
+    max-width: 1000px;
+    width: 100%;
+    height: 30px;
+    border-bottom: 2px solid #e5e0e1;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    padding-bottom: 25px;
+    @media (max-width: 1040px) {
+      width: 100%;
+      justify-content: space-around;
     }
 
+    div {
+      color: $graycolor;
+      font-family: $secondaryfont;
+      a {
+        color: $graycolor;
+      }
+    }
 
+    i {
+      margin-right: 5px;
+    }
+    @media (max-width: 1040px) {
+      .link-text {
+        display: none;
+        max-width: 500px;
+        width: 50%;
+      }
+    }
+  }
 }
