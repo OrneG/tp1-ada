@@ -45,6 +45,13 @@ header li:hover, header a:hover {
   color: #fa7855;
 }
 
+@media (max-width: 695px) {
+  header li, header a {
+    display: none;
+    visibility: hidden;
+  }
+}
+
 h1 {
   font-family: "Indie Flower", cursive;
   color: #fa7855;
@@ -370,10 +377,54 @@ iframe {
           align-items: center;
   -ms-flex-line-pack: center;
       align-content: center;
+  position: relative;
+}
+
+.receta-page .mobile-dropdown {
+  display: none;
+  visibility: hidden;
+}
+
+@media (max-width: 695px) {
+  .receta-page .mobile-dropdown {
+    visibility: visible;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 10px;
+    height: 40px;
+    width: 300px;
+    border-radius: 12px;
+    font-family: "IBM Plex Mono", monospace;
+    background-color: #F37758;
+    color: white;
+    position: absolute;
+    top: 95px;
+    z-index: 999;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  .receta-page .mobile-dropdown h2 {
+    color: #ffffff;
+    margin: 10px 0px 0px 0px;
+  }
+  .receta-page .mobile-dropdown h2 i {
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 391px) {
+  .receta-page .mobile-dropdown {
+    top: 160px;
+  }
 }
 
 .receta-page .img-frutas img {
   width: 100%;
+  margin-top: 50px;
 }
 
 .receta-page .info-container {
