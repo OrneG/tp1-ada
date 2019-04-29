@@ -1,3 +1,12 @@
+/* =========
+    FONTS 
+============ */
+/* ============
+    COLOR FONT
+=============== */
+/* ==================
+       FONT-SIZE 
+===================== */
 body {
   margin: 0;
   display: flex;
@@ -10,12 +19,21 @@ header {
   flex-direction: column;
 }
 header li, header a {
-  font-size: 20px;
+  list-style: none;
   padding: 0px 30px;
+  font-family: "IBM Plex Mono", monospace;
   color: #666666;
+  font-weight: 600;
+  font-size: 20px;
 }
 header li:hover, header a:hover {
   color: #fa7855;
+}
+@media (max-width: 695px) {
+  header li, header a {
+    display: none;
+    visibility: hidden;
+  }
 }
 
 h1 {
@@ -23,12 +41,6 @@ h1 {
   color: #fa7855;
   font-size: 50px;
   margin: 10px;
-}
-
-li, a {
-  list-style: none;
-  font-family: "IBM Plex Mono", monospace;
-  font-weight: 600;
 }
 
 a {
@@ -141,6 +153,9 @@ a {
   height: 260px;
   justify-content: space-between;
   margin-top: 30px;
+}
+.img-main-container a:visited {
+  color: #000000;
 }
 .img-main-container img {
   width: 350px;

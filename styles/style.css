@@ -155,7 +155,7 @@ a {
   justify-content: space-between;
   margin-top: 30px;
 }
-.img-main-container a:visited h3 {
+.img-main-container a:visited {
   color: #000000;
 }
 .img-main-container img {
