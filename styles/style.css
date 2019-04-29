@@ -31,12 +31,18 @@ header {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+header li, header a {
+  font-size: 20px;
+  padding: 0px 30px;
+  color: #666666;
+}
+header li:hover, header a:hover {
+  color: #fa7855;
+}
 
 header li, header a {
   list-style: none;
-  padding: 0px 30px;
   font-family: "IBM Plex Mono", monospace;
-  color: #666666;
   font-weight: 600;
   font-size: 20px;
 }
@@ -88,6 +94,10 @@ a {
 
 .hover-li ul li {
   padding: 5px 30px;
+}
+
+.mobile-dropdown {
+  display: none;
 }
 
 .banner {
@@ -217,7 +227,6 @@ a {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-top: 30px;
-  position: relative;
 }
 
 .img-main-container img {
@@ -225,7 +234,9 @@ a {
   height: 235px;
   background-size: cover;
   border-radius: 15%;
-  position: relative;
+}
+.img-main-container img:hover + .img-title {
+  background-color: #fa7855;
 }
 
 .img-main-container .img-title {
@@ -357,7 +368,7 @@ iframe {
 
 .description p {
   text-align: center;
-  color: #a7a6a6;
+  color: #979188;
   font-size: 12px;
   margin: 0px 20px;
   font-weight: 600;
