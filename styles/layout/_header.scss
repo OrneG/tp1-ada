@@ -20,7 +20,7 @@ header {
         &:hover {
             color: $main-color;
         }
-        @media (max-width: 695px){
+        @media (max-width: 595px){
             display: none;
             visibility: hidden;
         }

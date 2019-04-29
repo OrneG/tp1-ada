@@ -29,7 +29,7 @@ header li, header a {
 header li:hover, header a:hover {
   color: #fa7855;
 }
-@media (max-width: 695px) {
+@media (max-width: 595px) {
   header li, header a {
     display: none;
     visibility: hidden;
@@ -140,6 +140,10 @@ a {
   color: #979188;
   padding-left: 0px;
   flex-wrap: wrap;
+}
+#main ul li, #main ul a {
+  list-style: none;
+  font-family: "IBM Plex Mono", monospace;
 }
 
 .main {
@@ -301,6 +305,7 @@ iframe {
 .article-text .article-ul ul li {
   font-size: 14px;
   padding: 0px 12px 0px 0px;
+  font-weight: 600;
 }
 
 .article-title {

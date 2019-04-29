@@ -8,6 +8,11 @@
         color: $light-grey-color;
         padding-left: 0px;
         flex-wrap: wrap;
+
+        li, a {
+            list-style: none;
+            font-family: $main-font;
+        }
     }
 }
 
