@@ -50,6 +50,14 @@ a {
     }
 }
 
+
+/*
+********************************
+COMENTARIO
+Este ul pueden incluirlo directamente dentro del .hover-li
+********************************
+*/
+
 .hover-li ul {
     position: absolute;
     left: 0px;
@@ -57,6 +65,17 @@ a {
     visibility: hidden;
     background-color: #f8f8f8;
     z-index: 999;
+
+    /*
+    ********************************
+    COMENTARIO
+    Este & no es necesario, porque con li ya queda anidado dentro del ul,
+    sino se traduce como 
+    .hover ul .hover ul li 
+    en vez de 
+    .hover ul li
+    ********************************
+    */
 
     & li {
         padding: 5px 30px;

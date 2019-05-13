@@ -12,6 +12,13 @@
 
 <body>
     <div class="receta-page">
+        <!--
+        ***********************************
+            COMENTARIO:
+            El id de un elemento va sin #. Por otro lado, no es recomendable
+            llamarlo home dentro de la pagina recetas porque presta a confusión
+        ***********************************
+        -->
         <header id="#home">
             <h1>Mi Blog de Cocina</h1>
             <ul class="header-ul">
@@ -37,6 +44,14 @@
             <i class="fas fa-home"></i>
             <h4>Home > Archive > <span>Single Post Blog</span> </h4>
         </div>
+        <!--
+        ***********************************
+            COMENTARIO:
+            No es muy recomendable utilizar clases con numeros como container2, porque
+            no es muy claro a que refiere, mejor poner clase más significativa, como
+            receta-container
+        ***********************************
+        -->
         <section class="container2">
             <div class="columna">
                 <div class="receta">
@@ -62,8 +77,22 @@
                     <h2>Pionolo salado</h2>
                     <p>Muy sencillo, económico y rápido, sirve para rellenar con ingredientes dulces o salados.
                         Aquí va la receta bien caserita, como lo hacia mi abuela.</p>
+                    <!--
+                    ***********************************
+                        COMENTARIO:
+                        No hace falta utilizar un contenedor con clase quote cuando ya se está utilizando
+                        un elemento blockquote que es más semántico y significativo
+                    ***********************************
+                    -->
                     <div class="quote">
                         <blockquote>
+                            <!--
+                            ***********************************
+                                COMENTARIO:
+                                La etiqueta cita no es un elemento html, sí lo es cite, y es recomendado
+                                utilziar para la cita en cuestión (lo que está dentro dele elemento p)
+                            ***********************************
+                            -->
                             <p>“La cocina es algo que viene de generación en generación, desde nuestros
                                 ancestros hasta ahora en nuestra actualidad. Muchas recetas tradicionales”</p>
                             <cita>ELENA REMOTO</cita>
@@ -80,7 +109,22 @@
                 </div>
             </div>
         </section>
+        <!--
+        ***********************************
+            COMENTARIO:
+            No hace falta ponerle una clase al footer ya que elemento footer hay uno solo
+            y podemos utilizarlo para identificarlo directamente
+        ***********************************
+        -->
         <footer class="lastContainer">
+            <!--
+            ***********************************
+                COMENTARIO:
+                Para evitar utilizar tantos divs se puede utilizar un ul con li (como usaron en index)
+                que a la vez queda un poco más semántico porque nos da la idea de que son varios 
+                elementos dispuestos como en una lista
+            ***********************************
+            -->
             <div><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i><span
                         class="link-text">FACEBOOK</span></a></div>
             <div><a href="https://twitter.com/"><i class="fab fa-twitter"></i><span class="link-text">TWITTER</span></a>

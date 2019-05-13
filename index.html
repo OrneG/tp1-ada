@@ -6,16 +6,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi blog de cocina</title>
+    <!--
+    ***********************************
+        COMENTARIO:
+        No hace falta subir un nivel para volver a entrar al mismo, directamente pueden usar
+        la ruta entrando a la carpeta styles 
+    ***********************************
+    -->
     <link rel="stylesheet" type="text/css" media="screen" href="../tp1-ada/styles/home.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/home.css">
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="tp-results/result.css">
+    <script src="tp-results/result.js" type="text/javascript"></script>
 </head>
 
 <body>
+    <!--
+    ***********************************
+        COMENTARIO:
+        No es muy adecuado ponerle home como id a header, por un lado, porque header
+        hay un solo, y segundo, el id home englobaria como concepto a toda la pagina 
+    ***********************************
+    -->
     <header id="home">
         <h1>Mi Blog de Cocina</h1>
+        <!--
+        ***********************************
+            SUGERENCIA:
+            Para evitar clases redundantes, por ejemplo header-ul, que es un ul que ya esta
+            dentro de un header, pueden usar los selectores anidados de sass
+            header {
+                ul {
+                    
+                }
+            }
+        ***********************************
+        -->
         <ul class="header-ul">
             <li><a href="index.html">HOME</a></li>
             <li class="hover-li">PLATOS <i class="fas fa-sort-down"></i>
@@ -36,6 +65,14 @@
         <div class="img-container"><a href="receta.html">
                 <img src="img/img-1.jpg" />
                 <div class="hover-img">
+                    <!--
+                    ***********************************
+                        COMENTARIO:
+                        En este caso un ul queda medio extraño porque no es particularmente
+                        una lista de algo, pueden utilizar elementos span como elementos
+                        en línea en reemplazo 
+                    ***********************************
+                    -->
                     <ul>
                         <li>Mayo 17, 2017</li>
                         <li>|</li>
@@ -121,6 +158,14 @@
                     </div>
                 </div>
             </div>
+            <!--
+            ***********************************
+                COMENTARIO:
+                La clase video-ul es un poco difícil de interpretar porque no hay un elemento
+                ul hay que refiera. Es mejor darle alguna clase más semántica, por ejemplo
+                video-info o video-description
+            ***********************************
+            -->
             <div class="video-ul">
                 <p>29 de Abril, 2017</p>
                 <p>|</p>
@@ -128,6 +173,13 @@
             </div>
             <div class="articles">
                 <div class="hr"></div>
+                <!--
+                ***********************************
+                    SUGERENCIA:
+                    En vez de utilizar un div con clase article pueden directamente
+                    utilizar el elemento article que es un poco más semántico
+                ***********************************
+                -->
                 <div class="article">
                     <img src="img/nota1.JPG" />
                     <div class="article-text">
@@ -174,7 +226,30 @@
                     </div>
                 </div>
             </div>
+            <!--
+            ***********************************
+                COMENTARIO:
+                El footer va por fuera del elemento main, 
+                porque es un elemento independiente 
+            ***********************************
+            -->
             <footer>
+                <!--
+                ***********************************
+                    COMENTARIO:
+                    Los hijos directos de un elemento ul son siempre elementos li. Dentro de los
+                    li podemos meter otros elementos, pero dentro de un ul van sólo li. Pueden
+                    reorganizarlo de la siguiente forma:
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com/">
+                                <i class="fab fa-facebook-f"></i>
+                                FACEBOOK
+                            </a>                                
+                        </li>
+                    </ul> 
+                ***********************************
+                -->
                 <ul>
                     <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i>
                         <li>FACEBOOK</li>
